@@ -15,6 +15,10 @@ RUN rm -f /bin/sh.distrib && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
-    
+
 EXPOSE 8080
+
+USER developer
+WORKDIR /home/developer  
+
 ENTRYPOINT ["/bin/bash"]
