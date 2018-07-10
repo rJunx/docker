@@ -17,4 +17,5 @@ RUN rm -f /bin/sh.distrib && \
     rm -rf /tmp/*
     
 EXPOSE 8080
+USER developer
 ENTRYPOINT ["/bin/bash"]
